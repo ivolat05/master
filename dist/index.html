@@ -2,38 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <!-- Useful meta tags -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow, noodp">
-    <meta name="googlebot" content="index, follow">
-    <meta name="google" content="notranslate">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    
-    <!--favicon-->
-    <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    
-    <title>HomePage</title>
-    <link rel="stylesheet" href="assets/css/style.min.css">
+	<meta charset="UTF-8">
+	<!-- Useful meta tags -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow, noodp">
+	<meta name="googlebot" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	
+	<!--favicon-->
+	<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="theme-color" content="#ffffff">
+	
+	<title>Main</title>
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    
-    <div class="header header--fix" id='header'>
-        <h1 class='header__title'>HomePage </h1>
-        <a href="#" class="btn">login</a>
-    </div>
+	
+	<div class="page">
+		<header class="header">
+			<div class="header-wrapp">
+				<a href="#" aria-label="лого" class="header-logo">
+					<img width="204" height="65" src="./img/header/logo.png" alt="" class="logo">
+				</a>
+				<div class="header-coll">
+					<div class="header-coll-row  header-coll-row-1">
+						<h3 class="header-title">
+							Режим
+						</h3>
+						<label class="header-label">
+							<input type="radio" name="model" class="header-input" checked>
+							<span class="header-label-span header-label-model">
+								2D
+							</span>
+						</label>
+						<label class="header-label">
+							<input type="radio" name="model" class="header-input">
+							<span class="header-label-span  header-label-model">
+								3D
+							</span>
+						</label>
+					</div>
+					<div class="header-coll-row  header-coll-row-2">
+						<h3 class="header-title">
+							Форма
+						</h3>
+						<label class="header-label">
+							<input type="radio" name="forms" class="header-input" checked>
+							<span class="header-label-span header-label-span-2">
+								<svg class="header-label-svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="1" y="1" width="20" height="20" stroke="white" stroke-width="2" />
+								</svg>
+							</span>
+							<span class="header-info">
+								Квадратная
+							</span>
+						</label>
+						<label class="header-label">
+							<input type="radio" name="forms" class="header-input">
+							<span class="header-label-span">
+								<svg class="header-label-svg" width="21" height="21" viewBox="0 0 21 21" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 0V20H21" stroke="white" stroke-width="2" />
+								</svg>
+		
+							</span>
+						</label>
+						<label class="header-label">
+							<input type="radio" name="forms" class="header-input">
+							<span class="header-label-span">
+								<svg class="header-label-svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<circle cx="11" cy="11" r="10" stroke="white" stroke-width="2" />
+								</svg>
+		
+							</span>
+							<span class="header-info">
+								Круглая
+							</span>
+						</label>
+						<h3 class="header-title">
+							Размер
+						</h3>
+						<input class="header-number" type="number" placeholder="10">
+						<p class="header-text">
+							м
+						</p>
+						<input class="header-number  " type="number" placeholder="10">
+						<p class="header-text">
+							м
+						</p>
+					</div>
+					<div class="header-coll-row header-coll-row-3">
+		
+						<label class="header-label">
+							<input type="radio" name="list" class="header-input" checked>
+							<span class="header-label-span">
+								<svg class="header-label-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0.799919 23.6667H23.1999C23.4579 23.6667 23.6666 23.4578 23.6666 23.2V0.800041C23.6666 0.542326 23.4579 0.333374 23.1999 0.333374H0.799919C0.541976 0.333374 0.333252 0.542326 0.333252 0.800041V23.2C0.333252 23.4578 0.541976 23.6667 0.799919 23.6667ZM6.70982 12.4667H11.5333V17.2899H6.70982V12.4667ZM5.77648 17.2899H1.26659V12.4667H5.77648V17.2899ZM11.5333 18.2233V22.7334H6.70982V18.2233H11.5333ZM12.4666 18.2233H17.29V22.7334H12.4666V18.2233ZM12.4666 17.2899V12.4667H17.29V17.2899H12.4666ZM18.2234 12.4667H22.7333V17.2899H18.2234V12.4667ZM22.7333 11.5334H18.2234V6.70994H22.7333V11.5334ZM17.29 11.5334H12.4666V6.70994H17.29V11.5334ZM12.4666 5.7766V1.26671H17.29V5.7766H12.4666ZM11.5333 5.7766H6.70982V1.26671H11.5333V5.7766ZM11.5333 6.70994V11.5334H6.70982V6.70994H11.5333ZM5.77648 11.5334H1.26659V6.70994H5.77648V11.5334ZM1.26659 18.2233H5.77648V22.7334H1.26659V18.2233ZM18.2234 22.7334V18.2233H22.7333V22.7334H18.2234ZM22.7333 5.7766H18.2234V1.26671H22.7333V5.7766ZM5.77648 1.26671V5.7766H1.26659V1.26671H5.77648Z"
+										fill="white" />
+								</svg>
+							</span>
+						</label>
+						<label class="header-label">
+							<input type="radio" name="list" class="header-input">
+							<span class="header-label-span">
+								<svg class="header-label-svg" width="26" height="26" viewBox="0 0 26 26" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_0_28)">
+										<path
+											d="M25.0399 16.7526L22.9774 15.6594L25.0518 14.5661C25.6327 14.2595 25.9966 13.6569 25.9973 13C25.9933 12.344 25.6272 11.7438 25.0458 11.4398L22.9774 10.3406L25.0518 9.24733C25.915 8.78528 26.2403 7.71088 25.7783 6.84761C25.6131 6.53903 25.3604 6.28621 25.0518 6.12105L13.8233 0.211362C13.3119 -0.0704539 12.6918 -0.0704539 12.1804 0.211362L0.95191 6.12105C0.0886377 6.58311 -0.236651 7.65751 0.225356 8.52078C0.390514 8.82936 0.643279 9.08217 0.95191 9.24728L3.01441 10.3406L0.940077 11.4339C0.0768044 11.896 -0.248484 12.9704 0.213573 13.8336C0.378731 14.1422 0.631497 14.395 0.940077 14.5602L3.01441 15.6594L0.940077 16.7527C0.0768044 17.2147 -0.248484 18.2891 0.213573 19.1524C0.378731 19.4609 0.631497 19.7138 0.940077 19.8789L12.1686 25.7887C12.6799 26.0705 13.3001 26.0705 13.8115 25.7887L25.0399 19.8789C25.9032 19.4169 26.2285 18.3425 25.7665 17.4792C25.6013 17.1706 25.3485 16.9178 25.0399 16.7526ZM1.48969 8.20128C1.20412 8.04328 1.10066 7.68366 1.25871 7.39809C1.3125 7.30093 1.39254 7.22084 1.48969 7.16711L12.7182 1.25736C12.8857 1.15772 13.0944 1.15772 13.2618 1.25736L24.4903 7.16711C24.7759 7.32511 24.8794 7.68473 24.7213 7.9703C24.6675 8.06746 24.5875 8.14755 24.4903 8.20128L13.2618 14.111C13.0943 14.2107 12.8857 14.2107 12.7182 14.111L1.48969 8.20128ZM1.50152 13.5201C1.21595 13.3621 1.1125 13.0024 1.27055 12.7169C1.32433 12.6197 1.40437 12.5396 1.50152 12.4859L4.29093 11.0203L12.1804 15.1571C12.6918 15.4389 13.3119 15.4389 13.8233 15.1571L21.7128 11.0203L24.5022 12.4859C24.7877 12.6439 24.8912 13.0035 24.7331 13.2891C24.6794 13.3862 24.5993 13.4663 24.5022 13.5201L13.2737 19.4298C13.1061 19.5294 12.8975 19.5294 12.73 19.4298L1.50152 13.5201ZM24.7331 18.6019C24.6794 18.699 24.5993 18.7791 24.5022 18.8329L13.2737 24.7426C13.1061 24.8423 12.8975 24.8423 12.73 24.7426L1.50152 18.8329C1.21595 18.6749 1.1125 18.3152 1.27055 18.0297C1.32433 17.9325 1.40437 17.8524 1.50152 17.7987L4.29093 16.3331L12.1804 20.4699C12.6918 20.7517 13.3119 20.7517 13.8233 20.4699L21.7128 16.3331L24.5022 17.7987C24.7877 17.9567 24.8912 18.3163 24.7331 18.6019Z"
+											fill="white" />
+									</g>
+									<defs>
+										<clipPath id="clip0_0_28">
+											<rect width="26" height="26" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+		
+							</span>
+						</label>
+					</div>
+				</div>
+				<a href="#" aria-label="мой кабинет" class="header-btn">
+					Мой кабинет
+				</a>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main-wrap">
+			</div>
+		</main>
+	</div>
+	
 </body>
-<script src="assets/js/app.min.js"></script>
+<script src="js/app.min.js"></script>
 
 </html>
