@@ -138,8 +138,8 @@
 						</label>
 					</div>
 				</div>
-				<a href="#start-1" aria-label="мой кабинет" class="header-btn open-1">
-					Мой кабинет
+				<a href="#start" aria-label="мой кабинет " class="header-btn  open-1">
+					Мои проекты
 				</a>
 			</div>
 		</header>
@@ -882,80 +882,62 @@
 				</div>
 			</div>
 		</main>
+	
 	</div>
-	<div id="start-1" class="start popup mfp-hide">
-		<a href="#connection" class="popup-btn open-2">
-			Подключение
+	<div id="start" class="start popup mfp-hide">
+		<button class="popup-close">
+			<svg class="popup-close-svg" width="26" height="26" viewBox="0 0 26 26" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<line x1="6.8494" y1="6.84955" x2="19.4887" y2="19.4888" stroke="#F33F3F" stroke-width="1.98607" />
+				<line x1="6.84982" y1="19.489" x2="19.4891" y2="6.84978" stroke="#F33F3F" stroke-width="1.98607" />
+			</svg>
+		</button>
+		<a href="#" class="popup-btn">
+			Выбрать проект
 		</a>
-		<a href="#regist" class="popup-btn popup-reg open-2">
-			Регистрация
+		<a href="#create" class="popup-btn open-2">
+			Создать
 		</a>
 	</div>
 	
-	<div id="connection" class="connection popup mfp-hide">
-		<h3 class="popup-title">
-			Подключение
+	<div id="create" class="create popup mfp-hide">
+		<button class="popup-close">
+			<svg class="popup-close-svg" width="26" height="26" viewBox="0 0 26 26" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<line x1="6.8494" y1="6.84955" x2="19.4887" y2="19.4888" stroke="#F33F3F" stroke-width="1.98607" />
+				<line x1="6.84982" y1="19.489" x2="19.4891" y2="6.84978" stroke="#F33F3F" stroke-width="1.98607" />
+			</svg>
+		</button>
+		<h3 class="popup-title create-title">
+			Создать новую площадку
 		</h3>
+		<div class="popup-row create-row">
+			<div class="popup-row-coll">
+				<h3 class="popup-subtitle">
+					Длина (см)
+				</h3>
+				<input type="number" class="popup-inpt popup-input-2">
+			</div>
+			<div class="popup-row-coll">
+				<h3 class="popup-subtitle">
+					Ширина (см)
+				</h3>
+				<input type="number" class="popup-inpt popup-input-2">
+			</div>
 	
-		<div class="popup-row">
-			<h3 class="popup-row-title">
-				Email
-			</h3>
-			<input type="text" class="popup-inpt">
-		</div>
-		<div class="popup-row">
-			<h3 class="popup-row-title">
-				Пароль
-			</h3>
-			<input type="text" class="popup-inpt">
-		</div>
 	
-		<div class="popup-row">
-			<a href="home.html" class="popup-btn -fix-row">
-				Подключение
-			</a>
-			<a href="#regist" class="popup-btn  -fix-row popup-reg open-1">
-				Регистрация
-			</a>
 		</div>
-	</div>
-	
-	<div id="regist" class="regist popup mfp-hide">
-		<h3 class="popup-title">
-			Регистрация
+		<h3 class="popup-subtitle">
+			Длина (см)
 		</h3>
+		<input type="text" class="popup-inpt popup-input-3">
 	
 		<div class="popup-row">
-			<h3 class="popup-row-title">
-				ФИО
-			</h3>
-			<input type="text" class="popup-inpt">
-		</div>
-		<div class="popup-row">
-			<h3 class="popup-row-title">
-				Телефон
-			</h3>
-			<input type="text" class="popup-inpt">
-		</div>
-		<div class="popup-row">
-			<h3 class="popup-row-title">
-				Email
-			</h3>
-			<input type="text" class="popup-inpt">
-		</div>
-		<div class="popup-row">
-			<h3 class="popup-row-title">
-				Пароль
-			</h3>
-			<input type="text" class="popup-inpt">
-		</div>
-	
-		<div class="popup-row">
-			<a href="#connection" class="popup-btn -fix-row open-2">
-				Подключение
+			<a href="#start" class="popup-btn -fix-row open-1">
+				Отмена
 			</a>
 			<a href="#" class="popup-btn  -fix-row popup-reg">
-				Регистрация
+				Отправка
 			</a>
 		</div>
 	</div>
