@@ -2496,4 +2496,32 @@ $(function () {
 	}
 	openPanel('.main-btn-panel')
 
+	// открытие парелий
+	function openMainPanel() {
+		let menuBtn = document.querySelectorAll('.main-menu-btn');
+		let menuPanel = document.querySelectorAll('.main-left');
+		if (menuBtn && menuPanel) {
+			menuBtn.forEach(item => {
+				item.addEventListener('click', () => {
+					let dataArr = item.getAttribute('data-panel');
+					let id = document.getElementById(dataArr);
+					console.log(dataArr)
+					console.log(id)
+					menuBtn.forEach(item => {
+						if (item.classList.contains('active')) {
+							item.classList.remove('active');
+						}
+					})
+					menuPanel.forEach(item => {
+						if (item.classList.contains('active')) {
+							item.classList.remove('active');
+						}
+					})
+					item.classList.add('active');
+					id.classList.add('active');
+				})
+			})
+		}
+	};
+	openMainPanel()
 })
