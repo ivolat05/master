@@ -394,11 +394,31 @@
 								Ширина
 							</h4>
 							<div class="main-color-coll">
-								<input type="number" class="main-color-input" placeholder="1.5">
+								<div class="main-number-wrap">
+									<input id="main-color-input" type="number" class="main-color-input" value="1.5">
+									<button class="main-number-btn main-number-top">
+										<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7 0L13.9282 7.5H0.0717969L7 0Z" fill="#275578" />
+										</svg>
+				
+									</button>
+									<button class="main-number-btn main-number-bottom">
+										<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7 8L13.9282 0.5H0.0717969L7 8Z" fill="#275578" />
+										</svg>
+									</button>
+								</div>
 								<div class="main-color-title --fix">
 									м
 								</div>
 							</div>
+						</div>
+						<div class="main-color-row main-color-row-1">
+							<h4 class="main-color-title">
+								Cглаживание
+							</h4>
+							<div id="idLine" class="main-color-range"></div>
+							<input id="idHideInput" type="hidden">
 						</div>
 						<h4 class="main-color-title --padding">
 							Цвета
@@ -469,6 +489,15 @@
 						</div>
 						<button class="main-color-btn">
 							Добавить
+						</button>
+						<button class="main-color-close --display-none">
+							<svg class="main-close-svg" width="27" height="31" viewBox="0 0 27 31" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M25.2697 3.73045H18.4043V1.76892C18.4043 1.22753 17.9659 0.788147 17.4236 0.788147H9.57741C9.03603 0.788147 8.59664 1.22753 8.59664 1.76892V3.73045H1.73126C1.18987 3.73045 0.750488 4.16984 0.750488 4.71122V7.65353C0.750488 8.19492 1.18987 8.6343 1.73126 8.6343H2.71203V26.2881C2.71203 28.4517 4.47153 30.2112 6.6351 30.2112H20.3659C22.5294 30.2112 24.2889 28.4517 24.2889 26.2881V8.6343H25.2697C25.8121 8.6343 26.2505 8.19492 26.2505 7.65353V4.71122C26.2505 4.16984 25.8121 3.73045 25.2697 3.73045ZM10.5582 2.74969H16.4428V3.73045H10.5582V2.74969ZM22.3274 26.2881C22.3274 27.3699 21.4477 28.2497 20.3659 28.2497H6.6351C5.55332 28.2497 4.67357 27.3699 4.67357 26.2881V8.6343H22.3274V26.2881ZM24.2889 6.67276H2.71203V5.69199H9.57741H17.4236H24.2889V6.67276ZM12.5197 25.3074V11.5766C12.5197 11.0352 12.9591 10.5958 13.5005 10.5958C14.0419 10.5958 14.4813 11.0352 14.4813 11.5766V25.3074C14.4813 25.8488 14.0419 26.2881 13.5005 26.2881C12.9591 26.2881 12.5197 25.8488 12.5197 25.3074ZM7.61587 25.3074V11.5766C7.61587 11.0352 8.05526 10.5958 8.59664 10.5958C9.13803 10.5958 9.57741 11.0352 9.57741 11.5766V25.3074C9.57741 25.8488 9.13803 26.2881 8.59664 26.2881C8.05526 26.2881 7.61587 25.8488 7.61587 25.3074ZM17.4236 25.3074V11.5766C17.4236 11.0352 17.862 10.5958 18.4043 10.5958C18.9467 10.5958 19.3851 11.0352 19.3851 11.5766V25.3074C19.3851 25.8488 18.9467 26.2881 18.4043 26.2881C17.862 26.2881 17.4236 25.8488 17.4236 25.3074Z"
+									fill="black" />
+							</svg>
+				
 						</button>
 					</div>
 				</div>
