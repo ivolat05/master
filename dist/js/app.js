@@ -2494,12 +2494,22 @@ $(function () {
 			btn.forEach(item => {
 				item.addEventListener('click', () => {
 					item.parentElement.classList.toggle('active');
+					if (item.classList.contains('main-left-btn')) {
+						let tab = document.querySelectorAll('.main-menu-btn');
+						tab.forEach(item => {
+							if (item.classList.contains('active')) {
+								item.classList.remove('active')
+							}
+						})
+					}
+
 				})
 			})
 
 		}
 	}
 	openPanel('.main-btn-panel')
+
 
 	// открытие парелий
 	function openMainPanel() {
